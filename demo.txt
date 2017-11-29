@@ -1,0 +1,9 @@
+class {{className}} : NSObject {
+    {{#properties}}                
+    {{#if isArray}}
+        var {{nativeName}}:[{{type}}]
+    {{else}}
+        var {{nativeName}}:{{type}}
+    {{/if}}
+    {{/properties}}
+}
